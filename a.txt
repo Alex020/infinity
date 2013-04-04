@@ -1,0 +1,24 @@
+{*{-section name=loop1 loop=$arr-}*}
+{*<div class="box">*}
+	{*<div class="wrap-pic">*}
+		{*{-section name=loop2 loop=$arr[loop1].pic-}*}
+			{*<div class="pic">*}
+				{*{-$arr[loop1].pic[loop2]-}*}
+			{*</div>*}
+		{*{-/section-}*}
+	{*</div>*}
+	{*<br />*}
+	{*{-section name=loop2 loop=$arr[loop1].video-}*}
+	{*<div class="video">*}
+		{*{-$arr[loop1].video[loop2]-}*}
+	{*</div>*}
+	{*{-/section-}*}
+	{*<br />*}
+	{*{-section name=loop2 loop=$arr[loop1].pdf-}*}
+	{*<div class="pdf">*}
+		{*{-$arr[loop1].pdf[loop2]-}*}
+		{*</div>*}
+	{*{-/section-}*}
+	{*<br />*}
+{*</div>*}
+{*{-/section-}*}
